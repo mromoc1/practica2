@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TablapersonaSet" EntityType="Model1.Tablapersona" />
+  </EntityContainer>
+  <EntityType Name="Tablapersona">
+    <Key>
+      <PropertyRef Name="Idpersona" />
+    </Key>
+    <Property Name="Idpersona" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="ApellidoP" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="ApellidoM" Type="String" Nullable="false" MaxLength="50" />
+  </EntityType>
+</Schema>
